@@ -1,4 +1,4 @@
-##MLOps Project
+MLOps Project
     - Project Description  
     - Data Set Descriptions and Sources   
     - MLOps stages that were tested  
