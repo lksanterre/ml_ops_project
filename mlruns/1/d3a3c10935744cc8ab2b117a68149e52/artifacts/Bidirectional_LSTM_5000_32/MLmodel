@@ -1,0 +1,18 @@
+artifact_path: Bidirectional_LSTM_5000_32
+flavors:
+  keras:
+    data: data
+    keras_backend: tensorflow
+    keras_version: 3.3.3
+    save_exported_model: false
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.keras
+    python_version: 3.11.9
+mlflow_version: 2.15.1
+model_size_bytes: 2185123
+model_uuid: 2d53d4a949fd4876bb4f7c4966bd0d53
+run_id: d3a3c10935744cc8ab2b117a68149e52
+utc_time_created: '2024-08-29 09:19:48.308928'

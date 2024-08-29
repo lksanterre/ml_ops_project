@@ -1,0 +1,18 @@
+artifact_path: CNN_GlobalMaxPooling_2000_32
+flavors:
+  keras:
+    data: data
+    keras_backend: tensorflow
+    keras_version: 3.3.3
+    save_exported_model: false
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.keras
+    python_version: 3.11.9
+mlflow_version: 2.15.1
+model_size_bytes: 847014
+model_uuid: 114a5e43a73e4d778598f60b7ee9cfaa
+run_id: a5633a36e8134aa19d921fcbd31f2239
+utc_time_created: '2024-08-29 17:29:53.855634'
