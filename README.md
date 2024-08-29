@@ -15,7 +15,7 @@ This repository contains code and data for training a model to categorize questi
   - *Uncleaned Data*: Question data from the Stanford Question Answering Dataset (SQuAD) and Quora.
   - *Cleaned Data*: Processed data stored as a pickle file.
 
-- **cleaned_up.ipynb**: A Jupyter notebook for experimenting with different models to find the optimal one. It uses the cleaned data to train and evaluate three different models:
+- **model_selection.ipynb**: A Jupyter notebook for experimenting with different models to find the optimal one. It uses the cleaned data to train and evaluate three different models:
   - CNN with GlobalMaxPooling
   - Bidirectional LSTM
   - Simple LSTM
@@ -32,7 +32,7 @@ This repository contains code and data for training a model to categorize questi
 
 1. **Data Preparation**: The data from the Stanford and Quora datasets are preprocessed and cleaned in `first_model.ipynb`. The cleaned data is then stored as a pickle file in the `data/cleaned` directory.
 
-2. **Model Training and Evaluation**: `cleaned_up.ipynb` is used to train and evaluate three different neural network models: CNN with GlobalMaxPooling, Bidirectional LSTM, and Simple LSTM. The notebook is designed to experiment with different hyperparameters to determine the best performing model.
+2. **Model Training and Evaluation**: `model_selection.ipynb` is used to train and evaluate three different neural network models: CNN with GlobalMaxPooling, Bidirectional LSTM, and Simple LSTM. The notebook is designed to experiment with different hyperparameters to determine the best performing model.
 
 3. **Tracking Experiments**: MLflow is used to track model training experiments, including hyperparameters, performance metrics, and model artifacts.
 
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 1. Clone this repository.
 2. Run `first_model.ipynb` to preprocess the raw data.
-3. Use `cleaned_up.ipynb` to train and evaluate different models.
+3. Use `model_selection.ipynb` to train and evaluate different models.
 4. Track the model performance and tuning experiments using MLflow.
 
 ## Goal
