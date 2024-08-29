@@ -20,7 +20,7 @@ This repository contains code and data for training a model to categorize questi
   - Bidirectional LSTM
   - Simple LSTM
 
-- **first_model.ipynb**: A Jupyter notebook for preprocessing and cleaning the raw data into a format suitable for model training.
+- **data_preprocessing.ipynb**: A Jupyter notebook for preprocessing and cleaning the raw data into a format suitable for model training.
 
 - **mlruns/**: A directory created by MLflow to log and track model training experiments.
 
@@ -30,7 +30,7 @@ This repository contains code and data for training a model to categorize questi
 
 ## Workflow
 
-1. **Data Preparation**: The data from the Stanford and Quora datasets are preprocessed and cleaned in `first_model.ipynb`. The cleaned data is then stored as a pickle file in the `data/cleaned` directory.
+1. **Data Preparation**: The data from the Stanford and Quora datasets are preprocessed and cleaned in `data_preprocessing.ipynb`. The cleaned data is then stored as a pickle file in the `data/cleaned` directory.
 
 2. **Model Training and Evaluation**: `model_selection.ipynb` is used to train and evaluate three different neural network models: CNN with GlobalMaxPooling, Bidirectional LSTM, and Simple LSTM. The notebook is designed to experiment with different hyperparameters to determine the best performing model.
 
@@ -47,7 +47,7 @@ pip install -r requirements.txt
 ## How to Use
 
 1. Clone this repository.
-2. Run `first_model.ipynb` to preprocess the raw data.
+2. Run `data_preprocessing.ipynb` to preprocess the raw data.
 3. Use `model_selection.ipynb` to train and evaluate different models.
 4. Track the model performance and tuning experiments using MLflow.
 
