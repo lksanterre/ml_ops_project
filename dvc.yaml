@@ -1,0 +1,9 @@
+stages:
+  process_data:
+    cmd: python data_cleaning_pipeline.py
+    deps:
+      - /Users/lancesanterre/intern_2024/data/uncleaned/q_quora.csv
+      - /Users/lancesanterre/intern_2024/data/uncleaned/dev-v1.1.json
+      - data_cleaning_pipeline.py
+    outs:
+      - /Users/lancesanterre/intern_2024/data/processed/pipeline_and_data.pkl
