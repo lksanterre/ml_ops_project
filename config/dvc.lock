@@ -1,0 +1,22 @@
+schema: '2.0'
+stages:
+  process_data:
+    cmd: python /Users/lancesanterre/intern_2024/scripts/data_cleaning_pipeline.py
+    deps:
+    - path: ../data/uncleaned/dev-v1.1.json
+      hash: md5
+      md5: 3e85deb501d4e538b6bc56f786231552
+      size: 4854279
+    - path: ../data/uncleaned/q_quora.csv
+      hash: md5
+      md5: 48af9360409860312d831d5ffc6d55b8
+      size: 61325254
+    - path: ../scripts/data_cleaning_pipeline.py
+      hash: md5
+      md5: 343a53307c8006271ce5202ff30cb907
+      size: 2765
+    outs:
+    - path: ../data/processed/pipeline_and_data.pkl
+      hash: md5
+      md5: bed87fb21c9187df9df0a2217a52dda4
+      size: 32586783
