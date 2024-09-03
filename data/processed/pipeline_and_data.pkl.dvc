@@ -1,0 +1,5 @@
+outs:
+- md5: bed87fb21c9187df9df0a2217a52dda4
+  size: 32586783
+  hash: md5
+  path: pipeline_and_data.pkl
