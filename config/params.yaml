@@ -1,0 +1,4 @@
+preprocess:
+  csv_path: '/Users/lancesanterre/intern_2024/data/uncleaned/q_quora.csv'
+  json_path: '/Users/lancesanterre/intern_2024/data/uncleaned/dev-v1.1.json'
+  output_path: '/Users/lancesanterre/intern_2024/data/processed/pipeline_and_data.pkl'
