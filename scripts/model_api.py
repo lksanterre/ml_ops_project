@@ -3,6 +3,7 @@ import pickle
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
+import pandas as pd
 
 # Load the tokenizer from the pickle file
 with open('/Users/lancesanterre/intern_2024/notebooks/Bidirectional_LSTM_1000_64_2_tokenizer.pkl', 'rb') as f:
@@ -38,17 +39,22 @@ if st.button("Predict"):
     predictions_percent = np.round(predictions * 100, 2)
     predictions_hundredth = np.round(predictions, 2)
 
+    # Create a DataFrame with column names 'WHAT', 'HOW', 'WHY'
+    columns = ['WHAT', 'HOW', 'WHY']
+    predictions_df = pd.DataFrame(predictions_percent, columns=columns)
+
     # Update session state
     st.session_state.prediction = {
-        'percent': predictions_percent,
+        'percent': predictions_df,
         'hundredth': predictions_hundredth
     }
     st.session_state.user_question = user_question
 
 if st.session_state.prediction:
-    # Display results
-    st.write("Predictions as percentages:", st.session_state.prediction['percent'])
-    st.write("Predictions rounded to the hundredth place:", st.session_state.prediction['hundredth'])
+    # Display results as a table with column names 'WHAT', 'HOW', 'WHY'
+    st.write("Predictions as percentages:")
+    st.table(st.session_state.prediction['percent'])
+
 
 # Reset button to clear results
 if st.button("Reset"):
