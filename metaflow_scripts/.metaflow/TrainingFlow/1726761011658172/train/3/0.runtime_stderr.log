@@ -1,0 +1,38 @@
+[MFLOG|0|2024-09-19T15:50:22.956736Z|runtime|30134f51-6acd-4453-a3bb-85824c868843]<flow TrainingFlow step train> failed:
+[MFLOG|0|2024-09-19T15:50:23.059985Z|runtime|59221df3-cac6-4ec2-ad1e-1d6ccde63ddb]    Internal error
+[MFLOG|0|2024-09-19T15:50:23.060757Z|runtime|fc88fc79-865f-4a84-b69d-37d7ea0c2d5e]Traceback (most recent call last):
+[MFLOG|0|2024-09-19T15:50:23.060816Z|runtime|0c707a83-966e-4c8e-a84e-60ecb73d9161]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/cli.py", line 1134, in main
+[MFLOG|0|2024-09-19T15:50:23.060856Z|runtime|ebf2c1d0-fce3-4ddc-acab-1acf08824e27]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-09-19T15:50:23.060883Z|runtime|9b557a6d-3739-43c2-83b2-db050d4b83f9]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-09-19T15:50:23.060914Z|runtime|7d51b9ce-2254-46c2-ac82-19aac432a8aa]    return func(args, kwargs)
+[MFLOG|0|2024-09-19T15:50:23.329849Z|runtime|96b0e700-b319-49ea-b59c-397354a9d987]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:50:23.329999Z|runtime|6e6158f8-b86a-48d1-83e6-29dfd75e7272]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-09-19T15:50:23.330043Z|runtime|8cdb74ef-1901-4cf0-9b6d-24e43582e65a]    return self.main(args, kwargs)
+[MFLOG|0|2024-09-19T15:50:23.330067Z|runtime|5584f494-863e-4f52-8685-235a6c520c45]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:50:23.330085Z|runtime|5bc5739a-8deb-43e8-b238-9a83af9be92f]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-09-19T15:50:23.330105Z|runtime|c97f395a-7927-44e6-9468-f3d31aef000e]    rv = self.invoke(ctx)
+[MFLOG|0|2024-09-19T15:50:23.330122Z|runtime|d10831fc-f05d-456e-91e7-728916780998]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:50:23.330140Z|runtime|c0290e38-0abd-4f56-b4ba-101d56599d3a]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-09-19T15:50:23.330161Z|runtime|b45f1558-26b9-4c61-b159-33256b831646]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-09-19T15:50:23.330183Z|runtime|8a49e601-16b3-4c2f-8509-750d2b98d36c]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:50:23.330200Z|runtime|59eac6ec-75a1-4e06-b860-cf0c8e9d1b1d]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-09-19T15:50:23.330222Z|runtime|84ce7a67-90e5-4136-b5bd-b248bea60f16]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-09-19T15:50:23.330239Z|runtime|25c68177-31db-4e3d-ab4f-fce2a9a00b8f]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:50:23.330254Z|runtime|be52f326-ec83-4d88-8988-40fa0b27fc0a]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-09-19T15:50:23.330269Z|runtime|172d00f7-eec0-4ecb-b69f-eb05e02ca716]    return callback(args, kwargs)
+[MFLOG|0|2024-09-19T15:50:23.330284Z|runtime|6cf47089-cb0c-454b-b56b-7e379058b581]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:50:23.330303Z|runtime|852b3b99-c7db-4314-8778-08729e7548aa]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-09-19T15:50:23.330321Z|runtime|0c4380eb-70a5-489d-8d78-2d23e453c438]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-09-19T15:50:23.330338Z|runtime|e446465f-9133-4b53-98a6-0cbc802c2b8b]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:50:23.330354Z|runtime|062498e0-f52e-446b-bb14-d6c411331166]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/cli.py", line 468, in step
+[MFLOG|0|2024-09-19T15:50:23.330372Z|runtime|b77053d5-829b-4964-a676-02bcb3c13316]    task.run_step(
+[MFLOG|0|2024-09-19T15:50:23.330391Z|runtime|16976ad6-59aa-48c9-98ad-8131da01fdfc]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/task.py", line 650, in run_step
+[MFLOG|0|2024-09-19T15:50:23.330408Z|runtime|1c9bc787-87ec-4710-9aba-0eda1bed4980]    self._exec_step_function(step_func)
+[MFLOG|0|2024-09-19T15:50:23.330426Z|runtime|0711c193-9cb7-4557-b2b5-eddc0d1964d1]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-09-19T15:50:23.330443Z|runtime|23d381ef-6132-4653-9948-8d5c7bea42b9]    step_function()
+[MFLOG|0|2024-09-19T15:50:23.330459Z|runtime|67e3be6e-61f0-467d-b508-c5a4c7bc1f9a]  File "/Users/lancesanterre/intern_2024/metaflow_scripts/training_flow.py", line 31, in train
+[MFLOG|0|2024-09-19T15:50:23.330480Z|runtime|bdcda2ee-c422-483b-88af-37015d4f055c]    self.model, self.best_params = train_model(self.data, seed=self.seed)
+[MFLOG|0|2024-09-19T15:50:23.330495Z|runtime|d843bdcc-872d-4f0d-82d7-d1291b3097cb]                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:50:23.330513Z|runtime|e8732a04-1084-4759-a6b6-a633dd55ccfd]TypeError: train_model() missing 1 required positional argument: 'model'
+[MFLOG|0|2024-09-19T15:50:23.330530Z|runtime|e2694e4d-9a64-476d-b127-ec1bf7872416]
+[MFLOG|0|2024-09-19T15:50:23.330965Z|runtime|9ded396c-c50c-4940-969f-00f917fbcf9c]Task failed.

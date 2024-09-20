@@ -1,0 +1,1 @@
+{"run_number": "1726761485757823", "step_name": "build_model", "task_id": "2", "flow_id": "TrainingFlow", "user_name": "lancesanterre", "tags": [], "system_tags": ["user:lancesanterre", "runtime:dev", "python_version:3.11.9", "metaflow_version:2.12.20"], "ts_epoch": 1726761491828}

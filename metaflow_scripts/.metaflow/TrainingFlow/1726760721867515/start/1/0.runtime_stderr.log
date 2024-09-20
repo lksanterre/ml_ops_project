@@ -1,0 +1,44 @@
+[MFLOG|0|2024-09-19T15:45:26.992301Z|runtime|e5f841ce-2bce-41ba-8ce4-6dc423d34b93]<flow TrainingFlow step start> failed:
+[MFLOG|0|2024-09-19T15:45:26.997885Z|runtime|a0bba548-848a-4919-9fc1-e092ab7c9a0a]    Internal error
+[MFLOG|0|2024-09-19T15:45:26.998676Z|runtime|dbd1c07c-6b83-4a00-a365-b55f778c6d74]Traceback (most recent call last):
+[MFLOG|0|2024-09-19T15:45:26.998737Z|runtime|fc56f143-a692-4bc6-9fb9-c21d8f6bf564]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/cli.py", line 1134, in main
+[MFLOG|0|2024-09-19T15:45:26.998775Z|runtime|6a1ba55d-6fc7-4cbc-886a-6fbfcbfc255d]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-09-19T15:45:26.998802Z|runtime|442c5b5c-940f-45d7-946e-069b7b0b1d80]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-09-19T15:45:26.998843Z|runtime|a50a2c1a-d2a2-4ea1-ae72-fc5be392ed63]    return func(args, kwargs)
+[MFLOG|0|2024-09-19T15:45:26.998878Z|runtime|56f6310e-e743-49b2-9be0-999ab0dc12b5]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:45:26.998899Z|runtime|879e34f1-2747-4f57-92c3-1e56291fc8eb]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-09-19T15:45:26.998926Z|runtime|cf6d50ef-7809-4b8d-95d4-f893f3abc181]    return self.main(args, kwargs)
+[MFLOG|0|2024-09-19T15:45:27.662126Z|runtime|62e8e39b-e0b9-4407-bd29-27b0aca77a55]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:45:27.662281Z|runtime|dbbca481-216b-40f0-a039-e572e468cd84]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-09-19T15:45:27.662321Z|runtime|d6f8fea4-d9cd-44de-8e4b-75f476fd677d]    rv = self.invoke(ctx)
+[MFLOG|0|2024-09-19T15:45:27.662346Z|runtime|7d6de5f5-636f-4b6a-a0ba-67c5b6792192]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:45:27.662366Z|runtime|b49c0659-06b1-4f2f-b174-18b550e0fe87]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-09-19T15:45:27.662385Z|runtime|0154e963-aaa9-4bbf-a058-7134dcf810e2]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-09-19T15:45:27.662403Z|runtime|fb380db1-bd85-4134-ba7e-d780fbe0e69a]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:45:27.662421Z|runtime|be90b177-67b5-4267-b99c-1d8dd9e7a35e]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-09-19T15:45:27.662443Z|runtime|6a354ee5-5d6a-48ac-b9b1-933aedefdcd8]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-09-19T15:45:27.662461Z|runtime|2a022067-3f15-4a6b-b992-8b40a4279ef9]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:45:27.662477Z|runtime|3eb07ab0-fba6-441f-a8ef-db397ee49563]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-09-19T15:45:27.662493Z|runtime|f8011767-fc46-4122-9a29-e897c01fde6c]    return callback(args, kwargs)
+[MFLOG|0|2024-09-19T15:45:27.662509Z|runtime|aa33e672-68b8-42f1-8525-5604998c0ee3]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:45:27.662524Z|runtime|a4330013-f1b8-4611-87c2-d0e613d0d86c]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-09-19T15:45:27.662541Z|runtime|380a6e40-62e0-434d-97c0-58e243cf35c9]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-09-19T15:45:27.662556Z|runtime|27f074ad-0b93-420f-96f4-018b84e52456]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:45:27.662572Z|runtime|ed08d322-a073-4e94-8446-2757e52e99b6]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/cli.py", line 468, in step
+[MFLOG|0|2024-09-19T15:45:27.662589Z|runtime|0e877d24-772c-48f2-a331-91e4499d182f]    task.run_step(
+[MFLOG|0|2024-09-19T15:45:27.662606Z|runtime|9c36f468-8d65-4e86-b906-da7b4bafb650]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/task.py", line 650, in run_step
+[MFLOG|0|2024-09-19T15:45:27.662631Z|runtime|3a01d4d6-c932-4909-9257-6d1c42f3162d]    self._exec_step_function(step_func)
+[MFLOG|0|2024-09-19T15:45:27.662647Z|runtime|ed8fb201-9e1c-46c3-b427-ec0cce450cbf]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-09-19T15:45:27.662662Z|runtime|6a6313c0-7d07-4f62-a0b0-d5b540650f44]    step_function()
+[MFLOG|0|2024-09-19T15:45:27.662682Z|runtime|cd6e3500-5238-454f-aa59-45093c34b5b9]  File "/Users/lancesanterre/intern_2024/metaflow_scripts/training_flow.py", line 16, in start
+[MFLOG|0|2024-09-19T15:45:27.662699Z|runtime|6dabcfcb-b73c-4044-9250-58a0cdd7332d]    self.data = process_data('/Users/lancesanterre/intern_2024/data/cleaned/data.pkl')  # Update with your data path
+[MFLOG|0|2024-09-19T15:45:27.662714Z|runtime|faf424a7-489b-404a-85fa-fc713d5adcbe]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:45:27.662731Z|runtime|f361ae25-8c8c-4b2b-8e2d-bb3d63ef67f7]  File "/Users/lancesanterre/intern_2024/metaflow_scripts/data_processing.py", line 89, in process_data
+[MFLOG|0|2024-09-19T15:45:27.662747Z|runtime|ee8c4405-ae4b-46ff-a2b2-849e357ddc2e]    unsure, sure = filter(df)
+[MFLOG|0|2024-09-19T15:45:27.662763Z|runtime|323ccad0-cde1-4892-8f85-4e038124fa21]                   ^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:45:27.662779Z|runtime|98f8cf5d-705d-44ae-beb0-ba3df0b5966c]  File "/Users/lancesanterre/intern_2024/metaflow_scripts/data_processing.py", line 68, in filter
+[MFLOG|0|2024-09-19T15:45:27.662795Z|runtime|85a92fdc-0ddd-4745-80bd-0d906a949c8a]    if all(label == 0.33 for label in labels):
+[MFLOG|0|2024-09-19T15:45:27.662819Z|runtime|0ba69d37-1d74-433a-b415-4525ba4cb995]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:45:27.662844Z|runtime|19fef51c-d1d4-40a5-a4a5-9d6a040d2ddb]TypeError: 'NoneType' object is not iterable
+[MFLOG|0|2024-09-19T15:45:27.662860Z|runtime|609d1ce7-e32f-4ff7-999b-c79391adcf43]
+[MFLOG|0|2024-09-19T15:45:27.663303Z|runtime|82441315-b52a-457f-a7a6-3ded0b7ad8c3]Task failed.

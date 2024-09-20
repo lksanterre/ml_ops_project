@@ -1,0 +1,4 @@
+[MFLOG|0|2024-09-19T20:56:53.055988Z|runtime|277908d9-7851-4913-925b-474443f65520]2024/09/19 13:56:53 WARNING mlflow.keras.save: You are saving a Keras model without specifying model signature.
+[MFLOG|0|2024-09-19T20:56:55.865844Z|runtime|956b1d80-2d63-42b2-8f4c-7c252a60a52b]2024/09/19 13:56:55 WARNING mlflow.models.model: Input example should be provided to infer model signature if the model signature is not provided when logging the model.
+[MFLOG|0|2024-09-19T20:56:55.876863Z|runtime|8c9fb90a-475d-4ed4-8898-678cb2efa845]Registered model 'model_1' already exists. Creating a new version of this model...
+[MFLOG|0|2024-09-19T20:56:55.882289Z|runtime|0205fa85-d6d0-4aba-bc54-79cec30e9725]Created version '2' of model 'model_1'.

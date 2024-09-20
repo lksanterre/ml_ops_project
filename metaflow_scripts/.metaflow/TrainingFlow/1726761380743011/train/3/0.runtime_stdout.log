@@ -1,0 +1,11 @@
+[MFLOG|0|2024-09-19T15:56:32.037285Z|runtime|c6a7aeb4-9dc8-4455-bab3-b1f077c4e1c9]Training the model...
+[MFLOG|0|2024-09-19T15:56:32.679910Z|runtime|75df0716-328e-4641-b8d1-f935fa436742]X_train ['What are some things new employees should know going into their first day at Citizens?'
+[MFLOG|0|2024-09-19T15:56:32.680084Z|runtime|c1036d8c-86b0-4f47-8659-63a86961cf1e] "How do Quora's algorithm works?"
+[MFLOG|0|2024-09-19T15:56:32.680140Z|runtime|2e934a2f-7935-44a2-a6d6-f03a829fc4e9] 'How should I approach the situation with a guy I like?'
+[MFLOG|0|2024-09-19T15:56:32.680179Z|runtime|79833df0-cfc0-4b81-ae1b-a14856afc54c] 'How big is Pokémon GO?' 'Will Google buy Quora? Why or why not?']
+[MFLOG|0|2024-09-19T15:56:32.680216Z|runtime|6868aa0f-f7a6-4285-946e-5e547ecbe92e]y_train [[1. 0. 0.]
+[MFLOG|0|2024-09-19T15:56:32.734814Z|runtime|4928550e-cb81-482b-9bf0-a90da0f497cc] [0. 1. 0.]
+[MFLOG|0|2024-09-19T15:56:32.734953Z|runtime|869939dd-26f2-4800-8366-c0aaec75a42a] [0. 1. 0.]
+[MFLOG|0|2024-09-19T15:56:32.734987Z|runtime|174876e8-668f-46aa-be99-21d06c34d445] [0. 1. 0.]
+[MFLOG|0|2024-09-19T15:56:32.735011Z|runtime|946b3f53-2aa1-4ac7-a289-717c0410b358] [0. 0. 1.]]
+[MFLOG|0|2024-09-19T15:56:32.735035Z|runtime|054ae530-334a-41f7-8cd8-0f3102df1a13]Epoch 1/10

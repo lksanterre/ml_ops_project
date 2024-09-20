@@ -1,0 +1,4 @@
+[MFLOG|0|2024-09-19T20:51:18.665285Z|runtime|9acd7f02-b927-4e0b-b663-4814b03db8c9]2024/09/19 13:51:18 WARNING mlflow.keras.save: You are saving a Keras model without specifying model signature.
+[MFLOG|0|2024-09-19T20:51:21.744173Z|runtime|753ef30a-bf0d-4a8e-985d-fa23d82f83b8]2024/09/19 13:51:21 WARNING mlflow.models.model: Input example should be provided to infer model signature if the model signature is not provided when logging the model.
+[MFLOG|0|2024-09-19T20:51:21.751660Z|runtime|097110b3-86c4-4186-8c37-ba631fe770f1]Successfully registered model 'your_model_name'.
+[MFLOG|0|2024-09-19T20:51:21.753747Z|runtime|99988d2f-76bf-45f4-b5a9-c1a1fb955a9f]Created version '1' of model 'your_model_name'.

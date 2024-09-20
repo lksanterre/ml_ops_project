@@ -1,0 +1,15 @@
+[MFLOG|0|2024-09-19T15:46:11.167746Z|runtime|beb5dbcf-7509-4b2d-ac24-48b49b8463fb]Starting the training flow...
+[MFLOG|0|2024-09-19T15:46:11.585825Z|runtime|ccef42f2-7ab1-4d97-990f-9c4a70a536b6]                                                        0              labels
+[MFLOG|0|2024-09-19T15:46:14.609808Z|runtime|952195a6-8409-435d-8be4-5f60d47624a2]0       Which NFL team represented the AFC at Super Bo...     [1.0, 0.0, 0.0]
+[MFLOG|0|2024-09-19T15:46:14.609830Z|runtime|00768753-95e0-4462-af13-ffa31c629a83]1       Which NFL team represented the NFC at Super Bo...     [1.0, 0.0, 0.0]
+[MFLOG|0|2024-09-19T15:46:14.609847Z|runtime|0e3bbc04-c0fc-4a70-b94f-f81c7862f8f2]2                     Where did Super Bowl 50 take place?     [1.0, 0.0, 0.0]
+[MFLOG|0|2024-09-19T15:46:14.609869Z|runtime|47145a66-bdb1-4789-b2b2-ae71340840c2]3                       Which NFL team won Super Bowl 50?     [1.0, 0.0, 0.0]
+[MFLOG|0|2024-09-19T15:46:14.609885Z|runtime|7a163d21-3834-44ee-b3cc-186629560695]4       What color was used to emphasize the 50th anni...     [1.0, 0.0, 0.0]
+[MFLOG|0|2024-09-19T15:46:14.609899Z|runtime|96843992-e8fe-44de-a409-787b5052d59e]...                                                   ...                 ...
+[MFLOG|0|2024-09-19T15:46:14.609917Z|runtime|2714ee43-c0c2-424f-981e-16d51d8ec151]414916  How many keywords are there in the Racket prog...     [0.0, 1.0, 0.0]
+[MFLOG|0|2024-09-19T15:46:14.609935Z|runtime|e9631364-1347-4648-803a-887ed8958caf]414917          Do you believe there is life after death?  [0.33, 0.33, 0.33]
+[MFLOG|0|2024-09-19T15:46:14.609950Z|runtime|dd1f7cae-5adf-4d2e-914e-731f04957fd9]414918                                  What is one coin?     [1.0, 0.0, 0.0]
+[MFLOG|0|2024-09-19T15:46:14.609966Z|runtime|efedb80f-7228-4eb8-a27c-9e5335922f99]414919  What is the approx annual cost of living while...     [1.0, 0.0, 0.0]
+[MFLOG|0|2024-09-19T15:46:14.609982Z|runtime|059d4483-cba1-4d75-8feb-9c57517e986f]414920              What is like to have sex with cousin?     [1.0, 0.0, 0.0]
+[MFLOG|0|2024-09-19T15:46:14.609997Z|runtime|9d2da42c-d036-4dfb-9e14-61e376433cc5]
+[MFLOG|0|2024-09-19T15:46:14.610012Z|runtime|63d9c4bd-6ee0-4451-b26e-a7044aa6c12a][414921 rows x 2 columns]

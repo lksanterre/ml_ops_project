@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1726779081752
+current_stage: None
+description: null
+last_updated_timestamp: 1726779081752
+name: your_model_name
+run_id: 4b899333f57441568ad9b2b237214a36
+run_link: null
+source: /Users/lancesanterre/intern_2024/metaflow_scripts/your_mlflow_tracking_uri/495000273923970740/4b899333f57441568ad9b2b237214a36/artifacts/model
+status: READY
+status_message: null
+storage_location: /Users/lancesanterre/intern_2024/metaflow_scripts/your_mlflow_tracking_uri/495000273923970740/4b899333f57441568ad9b2b237214a36/artifacts/model
+user_id: null
+version: 1

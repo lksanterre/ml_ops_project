@@ -1,0 +1,9 @@
+[MFLOG|0|2024-09-19T15:54:48.135180Z|runtime|692eab2e-4833-4ba0-a84b-e7235c306f26]Training the model...
+[MFLOG|0|2024-09-19T15:54:48.574324Z|runtime|1dff1232-96cf-4105-907b-18d1f484a960]X_train ['What are some things new employees should know going into their first day at Citizens?'
+[MFLOG|0|2024-09-19T15:54:48.574487Z|runtime|1a9fc749-c833-41ef-9118-131bc7f7d406] "How do Quora's algorithm works?"
+[MFLOG|0|2024-09-19T15:54:48.574530Z|runtime|388b5d0c-9cbb-4e6d-81fa-563428ed2e53] 'How should I approach the situation with a guy I like?' ...
+[MFLOG|0|2024-09-19T15:54:48.574563Z|runtime|7ca7328c-b806-4187-9ae2-ef8096cece94] '"Hillary Clinton; A Career Criminal" is a viral YouTube video that "exposes" the Clintons. What part of it is true and what are conspiracies?'
+[MFLOG|0|2024-09-19T15:54:48.574597Z|runtime|56eb0c83-72c2-4f5f-be5f-6913f7c817c6] 'What are the types of contract?'
+[MFLOG|0|2024-09-19T15:54:48.574624Z|runtime|6a654c64-22cf-49ef-8e33-f6f9348006b5] 'What are the origins of the Foochow or Fuzhou people?']
+[MFLOG|0|2024-09-19T15:54:48.574649Z|runtime|e35abd2e-81f2-4f46-a3b3-60889c68aecc]y_train [list([1.0, 0.0, 0.0]) list([0.0, 1.0, 0.0]) list([0.0, 1.0, 0.0]) ...
+[MFLOG|0|2024-09-19T15:54:49.168134Z|runtime|459eedc8-7113-4a6f-990f-aabde9d22501] list([1.0, 0.0, 0.0]) list([1.0, 0.0, 0.0]) list([0.6, 0.4, 0.0])]

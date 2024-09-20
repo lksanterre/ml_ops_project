@@ -1,0 +1,45 @@
+[MFLOG|0|2024-09-19T15:56:32.757452Z|runtime|4d3fdbbd-f0bd-4a46-b80c-3bfaf28bc01f]<flow TrainingFlow step train> failed:
+[MFLOG|0|2024-09-19T15:56:32.857509Z|runtime|88199a97-d4a1-4d25-8008-442986a1439c]    Internal error
+[MFLOG|0|2024-09-19T15:56:32.858395Z|runtime|d375824f-53ed-4a75-8561-13319acfd62f]Traceback (most recent call last):
+[MFLOG|0|2024-09-19T15:56:32.858442Z|runtime|8d890fd8-c8b5-4a20-a290-14cc9ff6ddcb]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/cli.py", line 1134, in main
+[MFLOG|0|2024-09-19T15:56:32.858472Z|runtime|ce127217-8cc4-4f0a-869a-6ab2dd257cb7]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-09-19T15:56:32.858500Z|runtime|2b43bf28-8b47-4593-a72f-99578310a797]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-09-19T15:56:32.858530Z|runtime|39e14a31-244e-4084-af4c-dd67341abe71]    return func(args, kwargs)
+[MFLOG|0|2024-09-19T15:56:33.254429Z|runtime|1b3c9152-2547-4718-bfb2-6e073e9a849a]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:56:33.254606Z|runtime|5f8611ce-4f9a-4ce6-bb37-456d27525cad]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-09-19T15:56:33.254658Z|runtime|81630d23-5bad-4d76-af92-ae8c627d1cf4]    return self.main(args, kwargs)
+[MFLOG|0|2024-09-19T15:56:33.254686Z|runtime|d12866eb-270f-4d85-bc4a-bcd22f126a7d]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:56:33.254704Z|runtime|3bd16e1c-0299-4b33-bfe2-93f1f136877d]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-09-19T15:56:33.254727Z|runtime|a241dd0f-791c-457d-87ea-bbbf23585a35]    rv = self.invoke(ctx)
+[MFLOG|0|2024-09-19T15:56:33.254752Z|runtime|ffde9b12-edf7-4515-ae74-d01bddb7baa6]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:56:33.254769Z|runtime|e95d2883-6635-4939-b3dd-2fc696c8202f]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-09-19T15:56:33.254786Z|runtime|b6e3d736-106f-4dde-8917-f2d4eb6ffe75]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-09-19T15:56:33.254802Z|runtime|01ce925d-74fe-4371-9f16-82904bfeee28]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:56:33.254820Z|runtime|5c724e80-e575-40c8-99b0-30327479b739]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-09-19T15:56:33.254850Z|runtime|32eda398-aeb2-47d7-b0d6-920c46ab7af8]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-09-19T15:56:33.254867Z|runtime|e18a6991-4bb0-4cf0-a29a-912f9fb3e4f2]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:56:33.254883Z|runtime|5cbcac26-cb17-4125-bb50-2ba832a3a264]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-09-19T15:56:33.254903Z|runtime|88d9675a-afae-4dd7-adc2-56d8060c1206]    return callback(args, kwargs)
+[MFLOG|0|2024-09-19T15:56:33.254919Z|runtime|1879a216-a03e-4547-9335-75a75066b16a]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:56:33.254936Z|runtime|544d9f07-d2f6-4e11-9443-ea5b993d3cfc]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-09-19T15:56:33.254954Z|runtime|e2a3ef3f-82d8-417f-859c-fe2a0b2a64a7]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-09-19T15:56:33.254970Z|runtime|d97a1550-fc13-4d1c-a862-0ca935c7caae]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:56:33.254992Z|runtime|c336dca2-64c0-44c4-a765-dfe0ec059795]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/cli.py", line 468, in step
+[MFLOG|0|2024-09-19T15:56:33.255009Z|runtime|312ab7c7-a892-4142-bdcf-a4e5eecd5139]    task.run_step(
+[MFLOG|0|2024-09-19T15:56:33.255025Z|runtime|3d0b8953-a653-4475-8844-7685768fa5a0]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/task.py", line 650, in run_step
+[MFLOG|0|2024-09-19T15:56:33.255041Z|runtime|0abfeaf4-2088-440b-9ce2-d05517e86716]    self._exec_step_function(step_func)
+[MFLOG|0|2024-09-19T15:56:33.255062Z|runtime|28940131-9fcd-4422-a47e-b49aefd31235]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-09-19T15:56:33.255086Z|runtime|35694ef6-4b5c-4354-b366-36be8341ff0e]    step_function()
+[MFLOG|0|2024-09-19T15:56:33.255107Z|runtime|18205ae1-84c1-46bd-82f9-7c1ca42f7f6f]  File "/Users/lancesanterre/intern_2024/metaflow_scripts/training_flow.py", line 32, in train
+[MFLOG|0|2024-09-19T15:56:33.255125Z|runtime|785dbc00-dbaf-48ef-a250-d93e744f3ef5]    self.model, self.best_params = train_model(self.data, self.model, seed=self.seed)
+[MFLOG|0|2024-09-19T15:56:33.255141Z|runtime|c6f1a782-76c2-4085-9277-246ca7aaf453]                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:56:33.255163Z|runtime|5ce9ff44-807d-4aa1-99f4-987b72f101fc]  File "/Users/lancesanterre/intern_2024/metaflow_scripts/model_training.py", line 34, in train_model
+[MFLOG|0|2024-09-19T15:56:33.255180Z|runtime|bf4cb3ef-2c03-44fe-a975-98795a63be70]    history = model.fit(X_train, y_train, epochs=10, validation_data=(X_val, y_val))
+[MFLOG|0|2024-09-19T15:56:33.255196Z|runtime|8a3f15e4-761b-4d76-8c18-106d4fd58cca]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:56:33.255213Z|runtime|0b5923d5-2937-439e-8e50-950c8a16a9c6]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+[MFLOG|0|2024-09-19T15:56:33.255228Z|runtime|af0ea013-76ee-41f7-bf2d-a36c917b74ed]    raise e.with_traceback(filtered_tb) from None
+[MFLOG|0|2024-09-19T15:56:33.255244Z|runtime|3e3fd2ca-51e3-414c-ad49-8fa9cdff6523]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/layers/input_spec.py", line 186, in assert_input_compatibility
+[MFLOG|0|2024-09-19T15:56:33.255261Z|runtime|63a6efae-b4ec-4b38-aa7c-b54dd602a4a0]    raise ValueError(
+[MFLOG|0|2024-09-19T15:56:33.255278Z|runtime|a0657097-99e0-48ce-913e-9062a273c226]ValueError: Input 0 of layer "lstm" is incompatible with the layer: expected ndim=3, found ndim=2. Full shape received: (None, 128)
+[MFLOG|0|2024-09-19T15:56:33.255297Z|runtime|bebc09d2-ec93-4656-ab1d-9aa9e1205532]
+[MFLOG|0|2024-09-19T15:56:33.255762Z|runtime|83b6082d-0d3f-432a-a20b-94cc73f66852]Task failed.

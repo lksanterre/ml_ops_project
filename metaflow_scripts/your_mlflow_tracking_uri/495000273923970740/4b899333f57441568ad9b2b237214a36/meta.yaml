@@ -1,0 +1,15 @@
+artifact_uri: /Users/lancesanterre/intern_2024/metaflow_scripts/your_mlflow_tracking_uri/495000273923970740/4b899333f57441568ad9b2b237214a36/artifacts
+end_time: 1726779081753
+entry_point_name: ''
+experiment_id: '495000273923970740'
+lifecycle_stage: active
+run_id: 4b899333f57441568ad9b2b237214a36
+run_name: receptive-goose-617
+run_uuid: 4b899333f57441568ad9b2b237214a36
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726779078511
+status: 3
+tags: []
+user_id: lancesanterre

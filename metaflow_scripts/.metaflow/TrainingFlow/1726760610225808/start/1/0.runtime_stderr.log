@@ -1,0 +1,44 @@
+[MFLOG|0|2024-09-19T15:43:32.581488Z|runtime|78722229-af8d-463f-9745-e9ade8c01d6b]<flow TrainingFlow step start> failed:
+[MFLOG|0|2024-09-19T15:43:32.584875Z|runtime|0cedb475-9901-4dc4-978c-0ae20e438221]    Internal error
+[MFLOG|0|2024-09-19T15:43:32.585656Z|runtime|4f8f89ea-3878-49de-a5ab-6cc88f6057e6]Traceback (most recent call last):
+[MFLOG|0|2024-09-19T15:43:32.585699Z|runtime|364b6861-37d5-4408-93f0-f8fb66944f7b]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/cli.py", line 1134, in main
+[MFLOG|0|2024-09-19T15:43:32.585730Z|runtime|a90bb0a6-3856-4c17-b153-5549ac11ddaa]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-09-19T15:43:32.585759Z|runtime|e115c24a-03a4-416c-96c5-8c96e4ed3d3a]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-09-19T15:43:32.585793Z|runtime|1f265562-fdcc-4ffb-a02c-d2a10b64bf5d]    return func(args, kwargs)
+[MFLOG|0|2024-09-19T15:43:32.585831Z|runtime|1303a98d-f803-4cbb-8f9f-d3619fda7bee]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:43:32.585857Z|runtime|68181319-ccb8-4b4a-93af-1d2a7c59a4df]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-09-19T15:43:32.585882Z|runtime|0e2595d6-ae6f-4ae4-a2db-fc1d82ab275c]    return self.main(args, kwargs)
+[MFLOG|0|2024-09-19T15:43:32.887182Z|runtime|ccd279ad-6b40-4966-a112-5637231256ca]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:43:32.887359Z|runtime|4cb40490-3066-4b29-b1fd-20c230f83656]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-09-19T15:43:32.887397Z|runtime|171c8c08-7df3-440e-b016-1a86f791d22d]    rv = self.invoke(ctx)
+[MFLOG|0|2024-09-19T15:43:32.887425Z|runtime|982a5920-948c-43da-b767-0e926f9a2a89]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:43:32.887453Z|runtime|c4e01a8c-6e49-4ae9-b055-55927826f9e4]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-09-19T15:43:32.887476Z|runtime|380949df-e7b6-4d24-8e03-9e36c078c88d]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-09-19T15:43:32.887499Z|runtime|fcd77005-910a-489e-a17a-36299fa12711]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:43:32.887522Z|runtime|dda310d4-1363-470f-9d06-605fd713c7da]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-09-19T15:43:32.887541Z|runtime|26539158-54d4-42fc-8bfa-1321e30ef644]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-09-19T15:43:32.887558Z|runtime|fce611cd-7622-402a-a4aa-74ff5174f37e]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:43:32.887575Z|runtime|01e3bb90-ecc4-4045-96c3-4cdfbfb3aa3f]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-09-19T15:43:32.887592Z|runtime|995c3296-eddf-454c-a8de-c034a0dc6ea7]    return callback(args, kwargs)
+[MFLOG|0|2024-09-19T15:43:32.887609Z|runtime|1a1dcb15-dad4-4ca8-8004-88409592f8fe]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:43:32.887626Z|runtime|5652e5b9-3932-4da8-a663-bfa0f13e7dda]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-09-19T15:43:32.887642Z|runtime|3594c3c2-d047-45c9-ade2-6ca03d6fd1d1]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-09-19T15:43:32.887658Z|runtime|4129b5af-86d8-45ac-9543-2beb2ac6dbc1]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:43:32.887680Z|runtime|64e881eb-c276-4161-8b58-5fd6dca96542]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/cli.py", line 468, in step
+[MFLOG|0|2024-09-19T15:43:32.887697Z|runtime|1e3cea77-3a1d-4725-9a48-b9de3f2bc413]    task.run_step(
+[MFLOG|0|2024-09-19T15:43:32.887714Z|runtime|87913987-26b2-4712-bf2f-bd8b270e026a]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/task.py", line 650, in run_step
+[MFLOG|0|2024-09-19T15:43:32.887732Z|runtime|c0d7a7ec-37e7-4ea7-b403-9af1343166b0]    self._exec_step_function(step_func)
+[MFLOG|0|2024-09-19T15:43:32.887749Z|runtime|502bd2c4-5e62-461b-9de6-393aca012b12]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-09-19T15:43:32.887770Z|runtime|37598606-eebf-4321-b1d5-040ddc1e7ac8]    step_function()
+[MFLOG|0|2024-09-19T15:43:32.887790Z|runtime|fdfef9c2-1046-4dd5-8555-6a917a44c38b]  File "/Users/lancesanterre/intern_2024/metaflow_scripts/training_flow.py", line 16, in start
+[MFLOG|0|2024-09-19T15:43:32.887808Z|runtime|4e038a6e-251a-4075-8e20-069f7e7de2c5]    self.data = process_data('/Users/lancesanterre/intern_2024/data/cleaned/data.pkl')  # Update with your data path
+[MFLOG|0|2024-09-19T15:43:32.887828Z|runtime|ba568b16-c091-4c29-a445-2d72a76c0528]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:43:32.887845Z|runtime|2b47fdb9-632c-4914-a069-9efdec248a3c]  File "/Users/lancesanterre/intern_2024/metaflow_scripts/data_processing.py", line 79, in process_data
+[MFLOG|0|2024-09-19T15:43:32.887866Z|runtime|4049ff92-5748-4d66-9d59-976f41c56bcb]    data = pd.read_pickle(path)
+[MFLOG|0|2024-09-19T15:43:32.887883Z|runtime|f26f003d-082c-44f3-8581-b9c4c0c94c07]           ^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:43:32.887901Z|runtime|ff552508-d5ec-4590-abb6-bec00db1ac12]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/pandas/io/pickle.py", line 206, in read_pickle
+[MFLOG|0|2024-09-19T15:43:32.887917Z|runtime|baec9d35-1535-40e1-8180-a1341bc1204f]    return pickle.load(handles.handle)
+[MFLOG|0|2024-09-19T15:43:32.887932Z|runtime|09121329-b260-4814-b82d-296d270a4a93]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-19T15:43:32.887949Z|runtime|f7a39b23-3718-4a8f-97b8-5ded71d378ac]_pickle.UnpicklingError: invalid load key, '\x1f'.
+[MFLOG|0|2024-09-19T15:43:32.887968Z|runtime|8fe87830-7010-4154-ba41-f97bdca03e7b]
+[MFLOG|0|2024-09-19T15:43:32.888413Z|runtime|9e172583-a1c5-401c-810c-e254bb53cb8d]Task failed.

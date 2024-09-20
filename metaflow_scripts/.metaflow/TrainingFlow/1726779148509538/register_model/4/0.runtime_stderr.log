@@ -1,0 +1,40 @@
+[MFLOG|0|2024-09-19T20:53:28.255248Z|runtime|37fa0322-de79-49b0-bff8-3d88b8807e9b]2024/09/19 13:53:28 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+[MFLOG|0|2024-09-19T20:53:28.258265Z|runtime|157a0716-da03-45ee-8c90-b0c0580b61db]2024/09/19 13:53:28 INFO mlflow.store.db.utils: Updating database tables
+[MFLOG|0|2024-09-19T20:53:28.260113Z|runtime|33a84ca4-c9d4-4372-bf40-d85b6155e924]INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+[MFLOG|0|2024-09-19T20:53:28.260179Z|runtime|982e7088-479e-4297-b03f-395acb1b004f]INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+[MFLOG|0|2024-09-19T20:53:28.273550Z|runtime|d1413593-7508-4a5c-bb51-d04f8da86ca8]INFO  [alembic.runtime.migration] Running upgrade  -> 451aebb31d03, add metric step
+[MFLOG|0|2024-09-19T20:53:28.280279Z|runtime|84265050-0b79-4224-82ae-77f9e4b0d299]INFO  [alembic.runtime.migration] Running upgrade 451aebb31d03 -> 90e64c465722, migrate user column to tags
+[MFLOG|0|2024-09-19T20:53:28.282720Z|runtime|71e5ba1b-7ab7-4d2f-9844-bf4ed960f46d]INFO  [alembic.runtime.migration] Running upgrade 90e64c465722 -> 181f10493468, allow nulls for metric values
+[MFLOG|0|2024-09-19T20:53:28.288158Z|runtime|0294d601-9956-46bf-bded-73135cbba34f]INFO  [alembic.runtime.migration] Running upgrade 181f10493468 -> df50e92ffc5e, Add Experiment Tags Table
+[MFLOG|0|2024-09-19T20:53:28.289179Z|runtime|2f55f799-f00f-49eb-8d0b-67cd656a53ec]INFO  [alembic.runtime.migration] Running upgrade df50e92ffc5e -> 7ac759974ad8, Update run tags with larger limit
+[MFLOG|0|2024-09-19T20:53:28.293149Z|runtime|2930213d-80bd-4bd9-9f72-92a8a2b77f04]INFO  [alembic.runtime.migration] Running upgrade 7ac759974ad8 -> 89d4b8295536, create latest metrics table
+[MFLOG|0|2024-09-19T20:53:28.296951Z|runtime|aaa159e8-38ff-4c67-bb84-5c87c89b2a96]INFO  [89d4b8295536_create_latest_metrics_table_py] Migration complete!
+[MFLOG|0|2024-09-19T20:53:28.297453Z|runtime|c83f1178-5cfd-451d-9125-a6e16dc941bf]INFO  [alembic.runtime.migration] Running upgrade 89d4b8295536 -> 2b4d017a5e9b, add model registry tables to db
+[MFLOG|0|2024-09-19T20:53:28.297516Z|runtime|cd02dd4f-d88e-44f5-83b5-5a01fe9b5871]INFO  [2b4d017a5e9b_add_model_registry_tables_to_db_py] Adding registered_models and model_versions tables to database.
+[MFLOG|0|2024-09-19T20:53:28.298836Z|runtime|aa9a099e-9ee7-4f17-89ed-a5d423a2b076]INFO  [2b4d017a5e9b_add_model_registry_tables_to_db_py] Migration complete!
+[MFLOG|0|2024-09-19T20:53:28.299245Z|runtime|d815fbb0-357c-4382-99d0-3cd3fe57abe8]INFO  [alembic.runtime.migration] Running upgrade 2b4d017a5e9b -> cfd24bdc0731, Update run status constraint with killed
+[MFLOG|0|2024-09-19T20:53:28.303678Z|runtime|ab455df1-6943-4543-9056-205b7239aaac]INFO  [alembic.runtime.migration] Running upgrade cfd24bdc0731 -> 0a8213491aaa, drop_duplicate_killed_constraint
+[MFLOG|0|2024-09-19T20:53:28.304133Z|runtime|2f553534-569f-4867-a1a1-f7d0d7fa1d2b]INFO  [alembic.runtime.migration] Running upgrade 0a8213491aaa -> 728d730b5ebd, add registered model tags table
+[MFLOG|0|2024-09-19T20:53:28.305168Z|runtime|e9139420-3636-4873-a83f-c3d0983d6c42]INFO  [alembic.runtime.migration] Running upgrade 728d730b5ebd -> 27a6a02d2cf1, add model version tags table
+[MFLOG|0|2024-09-19T20:53:28.306237Z|runtime|08082761-b138-4f87-9ac8-876a1044ea7d]INFO  [alembic.runtime.migration] Running upgrade 27a6a02d2cf1 -> 84291f40a231, add run_link to model_version
+[MFLOG|0|2024-09-19T20:53:28.307164Z|runtime|8269d4b2-dacc-4a5e-abb3-4f9fc97c0b24]INFO  [alembic.runtime.migration] Running upgrade 84291f40a231 -> a8c4a736bde6, allow nulls for run_id
+[MFLOG|0|2024-09-19T20:53:28.310807Z|runtime|d8dcd384-dd88-489e-8508-d41ef1d5c17a]INFO  [alembic.runtime.migration] Running upgrade a8c4a736bde6 -> 39d1c3be5f05, add_is_nan_constraint_for_metrics_tables_if_necessary
+[MFLOG|0|2024-09-19T20:53:28.318827Z|runtime|10347472-f795-4e18-bf05-eff37e0355e3]INFO  [alembic.runtime.migration] Running upgrade 39d1c3be5f05 -> c48cb773bb87, reset_default_value_for_is_nan_in_metrics_table_for_mysql
+[MFLOG|0|2024-09-19T20:53:28.319305Z|runtime|a5f7bde7-fc15-47e4-a152-8f06cde596c0]INFO  [alembic.runtime.migration] Running upgrade c48cb773bb87 -> bd07f7e963c5, create index on run_uuid
+[MFLOG|0|2024-09-19T20:53:28.321418Z|runtime|36f875da-0057-45fe-97fb-e45a87530613]INFO  [alembic.runtime.migration] Running upgrade bd07f7e963c5 -> 0c779009ac13, add deleted_time field to runs table
+[MFLOG|0|2024-09-19T20:53:28.322283Z|runtime|447bef2b-685a-4854-acb4-e47b3444f8c1]INFO  [alembic.runtime.migration] Running upgrade 0c779009ac13 -> cc1f77228345, change param value length to 500
+[MFLOG|0|2024-09-19T20:53:28.327188Z|runtime|f315153b-d286-4385-a43f-b887cca0af55]INFO  [alembic.runtime.migration] Running upgrade cc1f77228345 -> 97727af70f4d, Add creation_time and last_update_time to experiments table
+[MFLOG|0|2024-09-19T20:53:28.328429Z|runtime|c1b2abf8-61ab-4b17-bf00-fe471c6adedc]INFO  [alembic.runtime.migration] Running upgrade 97727af70f4d -> 3500859a5d39, Add Model Aliases table
+[MFLOG|0|2024-09-19T20:53:28.329506Z|runtime|2b49c3c5-3980-4634-a288-63f221b289fd]INFO  [alembic.runtime.migration] Running upgrade 3500859a5d39 -> 7f2a7d5fae7d, add datasets inputs input_tags tables
+[MFLOG|0|2024-09-19T20:53:28.333302Z|runtime|9a4b1418-86f7-4060-b6ea-9e22814de120]INFO  [alembic.runtime.migration] Running upgrade 7f2a7d5fae7d -> 2d6e25af4d3e, increase max param val length from 500 to 8000
+[MFLOG|0|2024-09-19T20:53:28.337497Z|runtime|33a6aedc-b427-4d89-adc2-d6ec92434ab6]INFO  [alembic.runtime.migration] Running upgrade 2d6e25af4d3e -> acf3f17fdcc7, add storage location field to model versions
+[MFLOG|0|2024-09-19T20:53:28.338533Z|runtime|31613c51-b2f4-4786-aca6-f65583cc7103]INFO  [alembic.runtime.migration] Running upgrade acf3f17fdcc7 -> 867495a8f9d4, add trace tables
+[MFLOG|0|2024-09-19T20:53:28.341863Z|runtime|6e53bb62-45cb-4f8f-a0d6-05d09c9dcbd0]INFO  [alembic.runtime.migration] Running upgrade 867495a8f9d4 -> 5b0e9adcef9c, add cascade deletion to trace tables foreign keys
+[MFLOG|0|2024-09-19T20:53:28.349441Z|runtime|54a26d42-9a8f-4bbc-8ca8-f28661ecc448]INFO  [alembic.runtime.migration] Running upgrade 5b0e9adcef9c -> 4465047574b1, increase max dataset schema size
+[MFLOG|0|2024-09-19T20:53:28.353771Z|runtime|b081a001-b41a-45c2-a490-f353733e2a67]INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+[MFLOG|0|2024-09-19T20:53:28.360447Z|runtime|8f0542d8-b3b4-4b15-bd55-25ef2ed21e00]INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+[MFLOG|0|2024-09-19T20:53:28.360525Z|runtime|852bb4ff-da3d-4744-ad5f-2a3a4075c6cc]2024/09/19 13:53:28 INFO mlflow.tracking.fluent: Experiment with name 'model_1' does not exist. Creating a new experiment.
+[MFLOG|0|2024-09-19T20:53:28.666867Z|runtime|f6456eb2-36bc-4b4b-9871-70683293d3c1]2024/09/19 13:53:28 WARNING mlflow.keras.save: You are saving a Keras model without specifying model signature.
+[MFLOG|0|2024-09-19T20:53:31.557555Z|runtime|7be7b237-fd0a-480e-a208-8774b983cb25]2024/09/19 13:53:31 WARNING mlflow.models.model: Input example should be provided to infer model signature if the model signature is not provided when logging the model.
+[MFLOG|0|2024-09-19T20:53:31.569279Z|runtime|9d530e1d-76ce-4e7a-9eae-1924bef03882]Successfully registered model 'model_1'.
+[MFLOG|0|2024-09-19T20:53:31.573302Z|runtime|634c6b33-59b1-4a66-a349-2d370286ad12]Created version '1' of model 'model_1'.
